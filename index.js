@@ -10,5 +10,4 @@ import UserModel from './models/User.js';
 const User = UserModel(m);
 const app = appSrc(express, bodyParser, fs, crypto, http, CORS, User, m);
 const PORT = process.env.PORT || 9000;
-
 app.listen(PORT, () => console.log(`Server listening on port ${PORT}!`));
